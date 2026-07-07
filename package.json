@@ -1,0 +1,62 @@
+{
+  "devDependencies": {
+    "@biomejs/biome": "2.4.15",
+    "@rsbuild/plugin-babel": "^1.2.1",
+    "@rsbuild/plugin-react": "^2.0.1",
+    "@rslib/core": "^0.23.0",
+    "@rstest/adapter-rslib": "^0.10.5",
+    "@rstest/core": "^0.10.5",
+    "@testing-library/dom": "^10.4.1",
+    "@testing-library/jest-dom": "^6.9.1",
+    "@testing-library/react": "^16.3.2",
+    "@types/node": "^24.13.2",
+    "@types/react": "^19.2.17",
+    "@types/react-dom": "^19.2.3",
+    "babel-plugin-react-compiler": "^1.0.0",
+    "happy-dom": "^20.10.3",
+    "react": "^19.2.7",
+    "react-dom": "^19.2.7",
+    "rsbuild-plugin-workspace-dev": "^1.0.0",
+    "typescript": "^6.0.3"
+  },
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "keywords": [
+    "hooks",
+    "react-hooks",
+    "setInterval",
+    "setTimeout",
+    "worker",
+    "worker-hooks",
+    "WorkerInterval",
+    "WorkerTimeout"
+  ],
+  "name": "worker-hooks",
+  "packageManager": "pnpm@11.8.0",
+  "peerDependencies": {
+    "react": ">=19.0.0",
+    "react-dom": ">=19.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Razz99/worker-hooks.git"
+  },
+  "scripts": {
+    "build": "rslib",
+    "check": "biome check --write",
+    "dev": "rslib --watch",
+    "format": "biome format --write",
+    "test": "rstest",
+    "test:watch": "rstest --watch"
+  },
+  "type": "module",
+  "types": "./dist/index.d.ts",
+  "version": "1.0.0"
+}
